@@ -1,0 +1,590 @@
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+}
+.container
+{
+    display: grid;
+    /* grid-template-rows: repeat(20,1fr); */
+    /* grid-template-columns: ; */
+}
+img
+{
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+#g
+{
+    text-decoration: none;
+    /* color: white; */
+}
+.bkg
+{
+    align-items: center;
+    background-color: #393d3f;
+    display: flex;
+    flex: none;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 60px;
+    height: min-content;
+    justify-content: flex-start;
+    min-height: 800px;
+    overflow: visible;
+    padding: 100px;
+    position: relative;
+    width: 100%;
+    border-radius: 20px;
+}
+
+.box{
+    height: 100%;
+    width: 50%;
+    /* background-color: aqua; */
+}
+.head
+{
+    font:900;
+    font-family: "Gloock", "Gloock Placeholder", serif;
+    font-size: 75px;
+    line-height: 1.1em;
+    text-align: left;
+    color: rgb(253, 253, 255);
+    justify-content: space-between;
+}
+.buttons
+{
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    width: 100%;
+    /* background-color: bisque; */
+    align-items: center;
+    /* padding: 10px; */
+}
+.b
+{
+    margin-right: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    /* border: 20px solid black; */
+    background-color: white;
+    font-size: 20px;
+    border-radius: 25px;
+}
+.box2
+{
+    display: grid;
+    flex: 1 0 0px;
+    gap: 20px;
+    grid-auto-rows: minmax(0, 1fr);
+    grid-template-columns: repeat(2, minmax(50px, 1fr));
+    grid-template-rows: repeat(2, minmax(0, 1fr));
+    height: min-content;
+    justify-content: center;
+    overflow: visible;
+    padding: 0;
+    position: relative;
+    width: 1px;
+}
+.img1
+{
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    object-position: center center;
+    object-fit: cover;
+    image-rendering: auto;
+    border-top-right-radius: 200px;
+}
+.img2
+{
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    object-position: center center;
+    object-fit: cover;
+    image-rendering: auto;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 2;
+}
+.des{
+    background-color: white;
+    border-bottom-left-radius: 5000px;
+    border-top-left-radius: 5000px;
+    border-top-right-radius: 5000px;
+}
+.bkg2{
+    padding: 100px;
+    margin-left: 140px;
+    padding-right: 600px;
+}
+.box3
+{
+    align-content: flex-start;
+    align-items: flex-start;
+    display: flex;
+    flex: none;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 40px;
+    height: min-content;
+    justify-content: flex-start;
+    max-width: 1000px;
+    overflow: hidden;
+    padding: 0;
+    position: relative;
+    width: 100%;
+    z-index: 1;
+}
+.head2
+{
+    font-size: 50px;
+}
+.num
+{
+    align-content: center;
+    align-items: center;
+    display: flex;
+    flex: none;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 20px;
+    height: min-content;
+    justify-content: center;
+    max-width: 1000px;
+    overflow: hidden;
+    padding: 0;
+    position: relative;
+    width: 100%
+}
+.n
+{
+    align-content: flex-start;
+    align-items: flex-start;
+    display: flex;
+    flex: 1 0 0px;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 10px;
+    height: min-content;
+    justify-content: flex-start;
+    overflow: hidden;
+    padding: 0;
+    position: relative;
+    width: 1px;
+}
+.n1
+{
+    font-family: "Gloock", "Gloock Placeholder", serif;
+    font-size: 32px;
+    text-align: left;
+    font-weight: 900;
+}
+.n2
+{
+  font-family: "Libre Baskerville", "Libre Baskerville Placeholder", serif;
+   letter-spacing: -0.025em;
+   line-height: 1.5em;
+    text-align: left;
+    font-size: 20px;
+}
+.bkg3
+{
+    align-content: center;
+    align-items: center;
+    background-color: #fdfdff;
+    display: flex;
+    flex: none;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 0px;
+    height: min-content;
+    justify-content: flex-start;
+    overflow: visible;
+    padding: 100px;
+    position: relative;
+    width: 100%;
+}
+.b0
+{
+    display: grid;
+    flex: none;
+    gap: 20px;
+    grid-auto-rows: min-content;
+    grid-template-columns: repeat(2, minmax(40px, 1fr));
+    grid-template-rows: repeat(2, min-content);
+    height: min-content;
+    justify-content: center;
+    max-width: 1000px;
+    overflow: visible;
+    padding: 0;
+    position: relative;
+    width: 100%;
+}
+.b1
+{
+    align-content: flex-start;
+    align-items: flex-start;
+    align-self: center;
+    background-color: #e3e3ff;
+    border-radius: 40px;
+    display: flex;
+    flex: none;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 40px;
+    grid-column: auto / span 2;
+    height: min-content;
+    justify-content: flex-start;
+    justify-self: center;
+    overflow: hidden;
+    padding: 40px;
+    position: relative;
+    width: 100%;
+    will-change: var(will-change, transform);
+    z-index: 1;
+}
+.b11
+{
+    align-content: flex-start;
+    align-items: flex-start;
+    display: flex;
+    flex: none;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 5px;
+    height: min-content;
+    justify-content: center;
+    overflow: hidden;
+    padding: 0;
+    position: relative;
+    width: 100%;
+}
+.b111
+{
+     font-family: "Gloock", "Gloock Placeholder", serif;
+     font-size: 32px;
+     text-align: left;
+     color: rgb(57, 61, 63);
+}
+.ib1
+{
+    display: block;
+    width: 100%;
+    height: 400px;
+    border-radius: inherit;
+    object-position: center center;
+    object-fit: cover;
+    image-rendering: auto;
+
+}
+.b2{
+    align-content: flex-start;
+    align-items: flex-start;
+    align-self: center;
+    background-color: #e3e3ff;
+    border-radius: 40px;
+    display: flex;
+    flex: none;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 40px;
+    height: 400px;
+    justify-content: flex-start;
+    justify-self: center;
+    overflow: hidden;
+    padding: 40px;
+    position: relative;
+    width: 100%;
+    will-change: var(will-change, transform);
+    z-index: 1;
+}
+#a
+{
+    align-self: unset;
+    border-radius: 30px;
+    height: min-content;
+}
+.b20
+{
+    align-content: flex-start;
+    align-items: flex-start;
+    display: flex;
+    flex: none;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 5px;
+    height: min-content;
+    justify-content: center;
+    overflow: hidden;
+    padding: 0;
+    position: relative;
+    width: 100%;
+}
+.b21
+{
+     font-family: "Gloock", "Gloock Placeholder", serif;
+     font-size: 32px;
+     text-align: left;
+     color: rgb(57, 61, 63);
+}
+.bk1
+{
+    align-content: flex-start;
+    align-items: flex-start;
+    display: flex;
+    flex: none;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 20px;
+    height: min-content;
+    justify-content: center;
+    max-width: 1000px;
+    overflow: visible;
+    padding: 0;
+    position: relative;
+    width: 100%;
+}
+.bkg4
+{
+    align-content: center;
+    align-items: center;
+    background-color: #fdfdff;
+    display: flex;
+    flex: none;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 0px;
+    height: min-content;
+    justify-content: flex-start;
+    overflow: visible;
+    padding: 100px;
+    position: relative;
+    width: 100%;
+}
+.bbb
+{
+    align-content: flex-start;
+    align-items: flex-start;
+    display: flex;
+    flex: none;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 20px;
+    height: min-content;
+    justify-content: center;
+    max-width: 1000px;
+    overflow: visible;
+    padding: 0;
+    position: relative;
+    width: 100%;
+}
+.bb
+{
+    align-content: flex-start;
+    align-items: flex-start;
+    background-color: #e3e3ff;
+    border-radius: 30px;
+    box-shadow: 0 10px 20px -20px #00000040;
+    display: flex;
+    flex: 1 0 0px;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 20px;
+    height: min-content;
+    justify-content: flex-start;
+    overflow: hidden;
+    padding: 40px;
+    position: relative;
+    width: 1px;
+    will-change: var(will-change, transform);
+}
+.bb1
+{
+    font-size: 20px;
+}
+.button1 {
+    width: 180px;
+    height: 40px;
+    background-image: linear-gradient(rgb(214, 202, 254), rgb(158, 129, 254));
+    border: none;
+    border-radius: 50px;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    cursor: pointer;
+    box-shadow: 1px 3px 0px rgb(139, 113, 255);
+    transition-duration: .3s;
+  }
+  
+  .cartIcon {
+    width: 14px;
+    height: fit-content;
+  }
+  
+  .cartIcon path {
+    fill: white;
+  }
+  
+  .button:active {
+    transform: translate(2px ,0px);
+    box-shadow: 0px 1px 0px rgb(139, 113, 255);
+    padding-bottom: 1px;
+  }
+  
+.clr
+{
+    color: white;
+}
+li{
+    padding: 5px;
+}
+/* .bkg5
+{
+    align-content: center;
+    align-items: center;
+    background-color: #fdfdff;
+    display: flex;
+    flex: none;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 60px;
+    height: min-content;
+    justify-content: center;
+    overflow: hidden;
+    padding: 100px;
+    position: relative;
+    width: 100%;
+} */
+.bk51{
+    align-content: center;
+    /* align-items: center; */
+    background-color: #fdfdff;
+    display: flex;
+    flex: none;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 60px;
+    height: min-content;
+    justify-content: center;
+    overflow: hidden;
+    padding: 100px;
+    position: relative;
+    width: 100%;
+    padding: 40px;
+    text-align: left;
+}
+.bk512{
+    align-content: flex-start;
+    align-items: flex-start;
+    display: flex;
+    flex: none;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 100px;
+    height: min-content;
+    justify-content: center;
+    max-width: 1000px;
+    overflow: hidden;
+    padding: 0;
+    position: relative;
+    width: 100%;
+    padding: 60px;
+}
+.bk5head
+{
+   font-family: "Gloock", "Gloock Placeholder", serif;
+   font-size: 32px;
+   text: left;
+   color: rgb(84, 106, 123);
+   /* text-align: left; */
+}
+.bk5content
+{
+    align-content: flex-start;
+    align-items: flex-start;
+    display: flex;
+    flex: 1 0 0px;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 10px;
+    height: min-content;
+    justify-content: center;
+    max-width: 100%;
+    overflow: visible;
+    padding: 0;
+    position: relative;
+    width: 1px;
+}
+.bk5chead
+{
+   font-family: "Libre Baskerville", "Libre Baskerville Placeholder", serif;
+   font-size: 30px;
+   letter-spacing: -0.025em;
+   line-height: 1.5em;
+   text-align: left;
+   color: rgb(84, 106, 123);
+}
+.bk5cc
+{
+   font-family: "Libre Baskerville", "Libre Baskerville Placeholder", serif;
+   line-height: 1.5em;
+   text-align: left;
+   color: rgb(57, 61, 63);
+   font-size: 20px;
+}
+.bk6
+{
+    align-content: center;
+    align-items: center;
+    background-color: #fdfdff;
+    display: flex;
+    flex: none;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 10px;
+    height: min-content;
+    justify-content: center;
+    overflow: hidden;
+    padding: 100px;
+    position: relative;
+    width: 100%;
+}
+.bk6content
+{
+    align-content: center;
+    align-items: center;
+    display: flex;
+    flex: none;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 0px;
+    height: min-content;
+    justify-content: center;
+    max-width: 1000px;
+    overflow: visible;
+    padding: 0;
+    position: relative;
+    width: 100%;
+}
+.end
+{
+   font-family: "Libre Baskerville", "Libre Baskerville Placeholder", serif;
+   line-height: 1.5em;
+   text-align: center;
+}
+i
+{
+    font-size: 40px;
+    padding: 10px;
+}
